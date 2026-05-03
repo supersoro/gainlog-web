@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gainlog — Track every gym session. Plan your week. Log every sport.">
+<meta name="robots" content="index, follow">
+<title>Gainlog</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #0A0A0A;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 96px 32px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    color: #C8F135;
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+    line-height: 1;
+  }
+  .tagline {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 0 0 56px;
+    max-width: 540px;
+    font-weight: 400;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  .link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 18px 24px;
+    border: 1px solid #1F1F1F;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .link:hover {
+    border-color: #C8F135;
+    color: #C8F135;
+  }
+  .link .arrow {
+    color: #B4B2A9;
+    font-size: 20px;
+    transition: color 0.15s ease, transform 0.15s ease;
+  }
+  .link:hover .arrow {
+    color: #C8F135;
+    transform: translateX(2px);
+  }
+  footer {
+    border-top: 1px solid #1F1F1F;
+    padding: 32px;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+    color: #B4B2A9;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    justify-content: space-between;
+  }
+  footer a {
+    color: #B4B2A9;
+    text-decoration: none;
+  }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    main { padding: 64px 24px 48px; }
+    .logo { font-size: 44px; }
+    .tagline { font-size: 19px; margin-bottom: 40px; }
+    .link { font-size: 16px; padding: 16px 20px; }
+    footer { padding: 24px; flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1 class="logo">GAINLOG.</h1>
+    <p class="tagline">Track every gym session. Plan your week. Log every sport.</p>
+    <nav class="links" aria-label="Legal and support">
+      <a class="link" href="privacy.html">
+        <span>Privacy Policy</span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="link" href="support.html">
+        <span>Support</span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </nav>
+  </main>
+  <footer>
+    <a href="mailto:supersoro@gmail.com">supersoro@gmail.com</a>
+    <span>&copy; 2026 Diego Soro</span>
+  </footer>
+</body>
+</html>
